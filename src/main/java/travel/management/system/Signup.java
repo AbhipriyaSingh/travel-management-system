@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class Signup extends JFrame implements ActionListener
 {
     JButton b1,b2;
-    JTextField t1,t2,t3,t4;
+    JTextField t1,t2,t3,t4,t5;
     Choice c1;
     
     Signup()
@@ -55,19 +55,16 @@ public class Signup extends JFrame implements ActionListener
         t3.setBorder(BorderFactory.createEmptyBorder());
         p1.add(t3);
         
-        JLabel l4 = new JLabel("Security Question");                                 
+        JLabel l4 = new JLabel("Security");
         l4.setBounds(40,180,125,25);
         l4.setFont(new Font("Tahoma",Font.BOLD,14));
         l4.setForeground(new Color(0,0,0));
-        p1.add(l4); 
-        
-        c1 = new Choice();                                   //dropdown menu for security question using choice
-        c1.add("Name of your Hometown?");
-        c1.add("Name of your Best-friend?");
-        c1.add("Your Nickname?");
-        c1.add("Your Birth-year?");
-        c1.setBounds(190,180,180,125);
-        p1.add(c1);
+        p1.add(l4);
+
+        t4 = new JTextField();
+        t4.setBounds(190,180,180,25);
+        t4.setBorder(BorderFactory.createEmptyBorder());
+        p1.add(t4);
         
         JLabel l5 = new JLabel("Answer");                                 
         l5.setBounds(40,230,125,25);
@@ -75,10 +72,10 @@ public class Signup extends JFrame implements ActionListener
         l5.setForeground(new Color(0,0,0));
         p1.add(l5);        
         
-        t4 = new JTextField();
-        t4.setBounds(190,230,180,25);
-        t4.setBorder(BorderFactory.createEmptyBorder());
-        p1.add(t4);
+        t5 = new JTextField();
+        t5.setBounds(190,230,180,25);
+        t5.setBorder(BorderFactory.createEmptyBorder());
+        p1.add(t5);
         
         b1 = new JButton("Create");
         b1.setBounds(80,280,100,30);
@@ -97,7 +94,7 @@ public class Signup extends JFrame implements ActionListener
         p1.add(b2);
         
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/signup.png"));
-        Image i2 = i1.getImage().getScaledInstance(200,200,Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(50,50,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel l6 = new JLabel(i3);
         l6.setBounds(600,65,200,200);
@@ -112,11 +109,11 @@ public class Signup extends JFrame implements ActionListener
             String username = t1.getText();                                     //extract data inside textfield of button-1 (Username)
             String name = t2.getText();
             String password = t3.getText();
-            String security = c1.getSelectedItem();                             //it is a choice button
-            String answer = t4.getText();
+            String security = t4.getText();                            //it is a choice button
+            String answer = t5.getText();
             
             //inserting the queries into the table in the form of strings
-            String query = "INSERT INTO account VALUES('"+username+"','"+name+"','"+password+"','"+security+"','"+answer+"');";
+            String query = "INSERT INTO account(username,name,password,security,answer) VALUES('"+username+"','"+name+"','"+password+"','"+security+"','"+answer+"');";
             
             try
             {
@@ -131,7 +128,7 @@ public class Signup extends JFrame implements ActionListener
                 
             }catch(Exception e)
             {
-                
+                e.printStackTrace();
             }
             
         }
