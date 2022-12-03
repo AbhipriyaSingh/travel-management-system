@@ -12,7 +12,9 @@ The objective of the Travel and Tourism Management System project is to develop 
  - Connect to mysql
  `mysql -h localhost -P 3306 --protocol=tcp -u root -p`
  - Run database migration
- ```create database tms;use tms;create table account (id int NOT NULL AUTO_INCREMENT,username varchar(255) NOT NULL,name varchar(255) NOT NULL,password varchar(255),security varchar(255) NOT NULL,answer varchar(255) NOT NULL,PRIMARY KEY (id));create table customer(username varchar(255) NOT NULL,id varchar(255),number varchar(255),name varchar(255),gender varchar(255),country varchar(255),address varchar(255),phone varchar(255),email varchar(255),PRIMARY KEY(username));```
+ ```
+ create database tms;use tms;create table account (id int NOT NULL AUTO_INCREMENT,username varchar(255) NOT NULL,name varchar(255) NOT NULL,password varchar(255),security varchar(255) NOT NULL,answer varchar(255) NOT NULL,PRIMARY KEY (id));create table customer(username varchar(255) NOT NULL,id varchar(255),number varchar(255),name varchar(255),gender varchar(255),country varchar(255),address varchar(255),phone varchar(255),email varchar(255),PRIMARY KEY(username));
+ ```
  - Build project
  `mvn clean package`
  - Run
