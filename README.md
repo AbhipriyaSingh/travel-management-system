@@ -10,10 +10,10 @@ The objective of the Travel and Tourism Management System project is to develop 
  - Run Mysql docker image
  `docker run -p 3306:3306 --name mysql-local -e MYSQL_ROOT_PASSWORD=admin123 -d mysql:8.0.20`
  - Connect to mysql
- 'mysql -h localhost -P 3306 --protocol=tcp -u root -p'
+ `mysql -h localhost -P 3306 --protocol=tcp -u root -p`
  - Run database migration
- 'create database tms;create table account (id int NOT NULL AUTO_INCREMENT,  username varchar(255) NOT NULL, password varchar(255) NOT NULL, PRIMARY KEY (id));'
+ `create database tms;create table account (id int NOT NULL AUTO_INCREMENT,  username varchar(255) NOT NULL, password varchar(255) NOT NULL, PRIMARY KEY (id));`
  - Build project
  `mvn clean package`
  - Run
- ' java -jar ./target/travel-management-1.0-SNAPSHOT-jar-with-dependencies.jar'
+ `java -jar ./target/travel-management-1.0-SNAPSHOT-jar-with-dependencies.jar`
