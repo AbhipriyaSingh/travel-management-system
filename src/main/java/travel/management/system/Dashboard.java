@@ -45,7 +45,7 @@ public class Dashboard extends JFrame implements ActionListener
         b1 = new JButton("Add Personal Details");
         b1.setBackground(new Color(0,0,100));
         b1.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b1.setForeground(Color.WHITE);
+        b1.setForeground(Color.BLACK);
         b1.setBounds(0,0,300,50);
         b1.addActionListener(this);
         p2.add(b1);
@@ -54,7 +54,7 @@ public class Dashboard extends JFrame implements ActionListener
         b2 = new JButton("View Personal Details");
         b2.setBackground(new Color(0,0,100));
         b2.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b2.setForeground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
         b2.setBounds(0,50,300,50);
         b2.addActionListener(this);
         p2.add(b2);
@@ -63,7 +63,7 @@ public class Dashboard extends JFrame implements ActionListener
         b3 = new JButton("Check Package");
         b3.setBackground(new Color(0,0,100));
         b3.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b3.setForeground(Color.WHITE);
+        b3.setForeground(Color.BLACK);
         b3.setBounds(0,100,300,50);
         b3.addActionListener(this);
         p2.add(b3);
@@ -72,7 +72,7 @@ public class Dashboard extends JFrame implements ActionListener
         b4 = new JButton("Book Package");
         b4.setBackground(new Color(0,0,100));
         b4.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b4.setForeground(Color.WHITE);
+        b4.setForeground(Color.BLACK);
         b4.setBounds(0,150,300,50);
         b4.addActionListener(this);
         p2.add(b4);
@@ -80,7 +80,7 @@ public class Dashboard extends JFrame implements ActionListener
         b5 = new JButton("View Package");
         b5.setBackground(new Color(0,0,100));
         b5.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b5.setForeground(Color.WHITE);
+        b5.setForeground(Color.BLACK);
         b5.setBounds(0,200,300,50);
         b5.addActionListener(this);
         p2.add(b5);
@@ -88,7 +88,7 @@ public class Dashboard extends JFrame implements ActionListener
         b6 = new JButton("Book Hotels");
         b6.setBackground(new Color(0,0,100));
         b6.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b6.setForeground(Color.WHITE);
+        b6.setForeground(Color.BLACK);
         b6.setBounds(0,250,300,50);
         b6.addActionListener(this);
         p2.add(b6);
@@ -96,7 +96,7 @@ public class Dashboard extends JFrame implements ActionListener
         b7 = new JButton("View Booked Hotel");
         b7.setBackground(new Color(0,0,100));
         b7.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b7.setForeground(Color.WHITE);
+        b7.setForeground(Color.BLACK);
         b7.setBounds(0,300,300,50);
         b7.addActionListener(this);
         p2.add(b7);
@@ -105,7 +105,7 @@ public class Dashboard extends JFrame implements ActionListener
         b8 = new JButton("Payment");
         b8.setBackground(new Color(0,0,100));
         b8.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b8.setForeground(Color.WHITE);
+        b8.setForeground(Color.BLACK);
         b8.setBounds(0,350,300,50);
         b8.addActionListener(this);
         p2.add(b8);
@@ -113,7 +113,7 @@ public class Dashboard extends JFrame implements ActionListener
         b9 = new JButton("Calculator");
         b9.setBackground(new Color(0,0,100));
         b9.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b9.setForeground(Color.WHITE);
+        b9.setForeground(Color.BLACK);
         b9.setBounds(0,400,300,50);
         b9.addActionListener(this);
         p2.add(b9);
@@ -122,7 +122,7 @@ public class Dashboard extends JFrame implements ActionListener
         b10 = new JButton("NotePad");
         b10.setBackground(new Color(0,0,100));
         b10.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b10.setForeground(Color.WHITE);
+        b10.setForeground(Color.BLACK);
         b10.setBounds(0,450,300,50);
         b10.addActionListener(this);
         p2.add(b10);
@@ -131,7 +131,7 @@ public class Dashboard extends JFrame implements ActionListener
         b11 = new JButton("About");
         b11.setBackground(new Color(0,0,100));
         b11.setFont(new Font("Tahoma",Font.PLAIN,21));
-        b11.setForeground(Color.WHITE);
+        b11.setForeground(Color.BLACK);
         b11.setBounds(0,500,300,50);
         b11.addActionListener(this);
         p2.add(b11);
