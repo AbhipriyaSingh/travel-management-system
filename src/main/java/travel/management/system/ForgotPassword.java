@@ -81,7 +81,7 @@ public class ForgotPassword extends JFrame implements ActionListener
         
         b2 = new JButton("Retrieve");
         b2.setBackground(Color.GRAY);
-        b2.setForeground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
         b2.setBounds(380,140,100,25);
         b2.setFont(new Font("Tahoma",Font.BOLD,14));
         b2.addActionListener(this);
@@ -100,7 +100,7 @@ public class ForgotPassword extends JFrame implements ActionListener
         
         b3 = new JButton("Back");
         b3.setBackground(new Color(120,180,220));
-        b3.setForeground(Color.WHITE);
+        b3.setForeground(Color.BLACK);
         b3.setBounds(150,230,100,25);
         b3.setFont(new Font("Tahoma",Font.BOLD,14));
         b3.addActionListener(this);
@@ -125,7 +125,7 @@ public class ForgotPassword extends JFrame implements ActionListener
                 }
             }catch(Exception e)
             {
-                
+                e.printStackTrace();
             }
             
         }
@@ -142,7 +142,7 @@ public class ForgotPassword extends JFrame implements ActionListener
                 }
             }catch(Exception e)
             {
-                
+                e.printStackTrace();
             }
         }
         else if(ae.getSource() == b3)
